@@ -14,6 +14,8 @@ public class MyClass {
 
     private WebDriver driver;
     private WebDriverWait wait;
+    private String ADMIN_USERNAME = "admin";
+    private String ADMIN_PASSWORD = "admin";
 
     @Before
     public void start() {
@@ -22,11 +24,12 @@ public class MyClass {
     }
 
     @Test
-    public void myTest() {
-        driver.get("http://youtube.com");
-        driver.findElement(By.name("search_query")).sendKeys("webdriver");
-        driver.findElement(By.id("search-icon-legacy")).click();
-        wait.until(titleIs("webdriver - YouTube"));
+    public void LoginAdmin() {
+        driver.get("http://localhost/litecart/admin/");
+        driver.findElement(By.name("username")).sendKeys(ADMIN_USERNAME);
+        driver.findElement(By.name("password")).sendKeys(ADMIN_PASSWORD);
+        driver.findElement(By.name("login")).click();
+        wait.until(titleIs("Denis"));
     }
 
     @After
