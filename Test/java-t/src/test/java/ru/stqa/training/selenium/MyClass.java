@@ -5,17 +5,28 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
+
+import static org.openqa.selenium.support.ui.ExpectedConditions.titleContains;
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
 public class MyClass {
 
+    private static final By USERNAME = By.name("username");
+    private static final By PASSWORD = By.name("password");
+    private static final By LOGIN = By.name("login");
+    private static final By MENU = By.cssSelector("ul#box-apps-menu li#app-");
+    private static final By SUB_MENU = By.cssSelector("ul#box-apps-menu li#app- li");
+
+    private static final String ADMIN_USERNAME = "admin";
+    private static final String ADMIN_PASSWORD = "admin";
+
     private WebDriver driver;
     private WebDriverWait wait;
-    private String ADMIN_USERNAME = "admin";
-    private String ADMIN_PASSWORD = "admin";
 
     @Before
     public void start() {
@@ -23,13 +34,47 @@ public class MyClass {
         wait = new WebDriverWait(driver, 10);
     }
 
-    @Test
+    private WebElement getUsername() {
+        return driver.findElement(USERNAME);
+    }
+
+    private WebElement getPassword() {
+        return driver.findElement(PASSWORD);
+    }
+
+    private WebElement getLogin() {
+        return driver.findElement(LOGIN);
+    }
+
     public void LoginAdmin() {
         driver.get("http://localhost/litecart/admin/");
-        driver.findElement(By.name("username")).sendKeys(ADMIN_USERNAME);
-        driver.findElement(By.name("password")).sendKeys(ADMIN_PASSWORD);
-        driver.findElement(By.name("login")).click();
+        getUsername().sendKeys(ADMIN_USERNAME);
+        getPassword().sendKeys(ADMIN_PASSWORD);
+        getLogin().click();
         wait.until(titleIs("Denis"));
+    }
+
+    private List<WebElement> getMenu() {
+        return driver.findElements(MENU);
+    }
+
+    private List<WebElement> getSubMenu() {
+        return driver.findElements(SUB_MENU);
+    }
+
+    @Test
+    public void Lesson4() {
+        LoginAdmin();
+
+        for (int i = 0; i < getMenu().toArray().length; i++) {
+            getMenu().get(i).click();
+            wait.until(titleContains(" | Denis"));
+
+            for (int j = 0; j < getSubMenu().toArray().length; j++) {
+                getSubMenu().get(j).click();
+                wait.until(titleContains(" | Denis"));
+            }
+        }
     }
 
     @After
