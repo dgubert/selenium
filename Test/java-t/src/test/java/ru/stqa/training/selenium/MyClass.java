@@ -1,6 +1,7 @@
 package ru.stqa.training.selenium;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -11,6 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
+import static org.junit.Assert.assertTrue;
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleContains;
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
@@ -32,6 +34,10 @@ public class MyClass {
     public void start() {
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver, 10);
+    }
+
+    boolean isElementPresent(By locator) {
+        return driver.findElements(locator).size() > 0;
     }
 
     private WebElement getUsername() {
@@ -68,11 +74,10 @@ public class MyClass {
 
         for (int i = 0; i < getMenu().toArray().length; i++) {
             getMenu().get(i).click();
-            wait.until(titleContains(" | Denis"));
-
+            
             for (int j = 0; j < getSubMenu().toArray().length; j++) {
                 getSubMenu().get(j).click();
-                wait.until(titleContains(" | Denis"));
+                assertTrue(isElementPresent(By.cssSelector("h1")));
             }
         }
     }
