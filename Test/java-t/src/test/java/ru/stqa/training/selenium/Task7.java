@@ -12,11 +12,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 
+import static java.util.concurrent.TimeUnit.SECONDS;
 import static org.junit.Assert.assertTrue;
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleContains;
 import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
-public class MyClass {
+public class Task7 {
 
     private static final By USERNAME = By.name("username");
     private static final By PASSWORD = By.name("password");
@@ -74,7 +75,7 @@ public class MyClass {
 
         for (int i = 0; i < getMenu().toArray().length; i++) {
             getMenu().get(i).click();
-            
+
             for (int j = 0; j < getSubMenu().toArray().length; j++) {
                 getSubMenu().get(j).click();
                 assertTrue(isElementPresent(By.cssSelector("h1")));
