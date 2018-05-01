@@ -19,8 +19,8 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
 public class Task8 {
 
-    private static final By PRODUCT = By.cssSelector(".listing-wrapper li");
-    private static final By STICKER = By.cssSelector(".listing-wrapper li .sticker");
+    private static final By PRODUCT = By.cssSelector(".listing-wrapper .link");
+    private static final By STICKER = By.cssSelector(".listing-wrapper .link .sticker");
 
     private WebDriver driver;
     private WebDriverWait wait;

@@ -48,10 +48,13 @@
       <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
       <change beforePath="$PROJECT_DIR$/gradlew" afterPath="$PROJECT_DIR$/gradlew" />
       <change beforePath="$PROJECT_DIR$/java-t.iml" afterPath="$PROJECT_DIR$/java-t.iml" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/ru/stqa/training/selenium/Task10.class" afterPath="$PROJECT_DIR$/out/test/classes/ru/stqa/training/selenium/Task10.class" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/ru/stqa/training/selenium/Task7.class" afterPath="$PROJECT_DIR$/out/test/classes/ru/stqa/training/selenium/Task7.class" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/ru/stqa/training/selenium/Task8.class" afterPath="$PROJECT_DIR$/out/test/classes/ru/stqa/training/selenium/Task8.class" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/ru/stqa/training/selenium/Task9.class" afterPath="$PROJECT_DIR$/out/test/classes/ru/stqa/training/selenium/Task9.class" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/Task7.java" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/Task7.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/Task8.java" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/Task8.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/Task9.java" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/Task9.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -69,7 +72,18 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="Task8.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/Task8.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-27">
+              <caret line="22" column="76" lean-forward="false" selection-start-line="22" selection-start-column="76" selection-end-line="22" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -449,12 +463,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/MyClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/Task7.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/Task8.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/Table.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/Base.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/AdminPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/Task10.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/Task9.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/Task8.java" />
       </list>
     </option>
   </component>
@@ -819,6 +833,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="696" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -833,7 +848,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -930,14 +945,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/Task8.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="39" column="48" lean-forward="false" selection-start-line="39" selection-start-column="47" selection-end-line="39" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/Task10.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -986,6 +993,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/Task8.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-27">
+          <caret line="22" column="76" lean-forward="false" selection-start-line="22" selection-start-column="76" selection-end-line="22" selection-end-column="76" />
           <folding />
         </state>
       </provider>
