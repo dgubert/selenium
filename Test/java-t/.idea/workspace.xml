@@ -52,6 +52,7 @@
       <change beforePath="$PROJECT_DIR$/out/test/classes/ru/stqa/training/selenium/Task7.class" afterPath="$PROJECT_DIR$/out/test/classes/ru/stqa/training/selenium/Task7.class" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/ru/stqa/training/selenium/Task8.class" afterPath="$PROJECT_DIR$/out/test/classes/ru/stqa/training/selenium/Task8.class" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/ru/stqa/training/selenium/Task9.class" afterPath="$PROJECT_DIR$/out/test/classes/ru/stqa/training/selenium/Task9.class" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/Task10.java" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/Task10.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/Task7.java" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/Task7.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/Task8.java" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/Task8.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/Task9.java" afterPath="$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/Task9.java" />
@@ -76,8 +77,8 @@
       <file leaf-file-name="Task10.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/Task10.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-677">
-              <caret line="25" column="71" lean-forward="false" selection-start-line="25" selection-start-column="71" selection-end-line="25" selection-end-column="71" />
+            <state relative-caret-position="510">
+              <caret line="91" column="8" lean-forward="false" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
               <folding>
                 <element signature="e#1326#1327#0" expanded="true" />
                 <element signature="e#1379#1380#0" expanded="true" />
@@ -481,7 +482,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1296" />
@@ -809,15 +810,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Task10_Test1 - 2018.05.02 at 01h 13m 30s.xml">
-      <configuration name="Task10.Test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Task10_Test1 - 2018.05.02 at 01h 13m 43s.xml">
-      <configuration name="Task10.Test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Task10_Test1 - 2018.05.02 at 01h 30m 02s.xml">
-      <configuration name="Task10.Test1" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Task10_Test1 - 2018.05.02 at 01h 37m 19s.xml">
       <configuration name="Task10.Test1" configurationId="JUnit" />
     </history-entry>
@@ -839,9 +831,18 @@
     <history-entry file="Task10_Test1 - 2018.05.02 at 01h 49m 33s.xml">
       <configuration name="Task10.Test1" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Task10_Test1 - 2018.05.02 at 11h 43m 12s.xml">
+      <configuration name="Task10.Test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Task10_Test1 - 2018.05.02 at 11h 46m 31s.xml">
+      <configuration name="Task10.Test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Task10_Test1 - 2018.05.02 at 11h 46m 53s.xml">
+      <configuration name="Task10.Test1" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1296" height="696" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -852,12 +853,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.60544217" sideWeight="0.503125" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58203125" sideWeight="0.496875" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5816327" sideWeight="0.496875" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.135" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32954547" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1019,16 +1020,16 @@
         <state relative-caret-position="114">
           <caret line="51" column="8" lean-forward="true" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
           <folding>
-            <element signature="e#1439#1440#0" expanded="true" />
-            <element signature="e#1482#1483#0" expanded="true" />
+            <element signature="e#1439#1440#0" expanded="false" />
+            <element signature="e#1482#1483#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/stqa/training/selenium/Task10.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-677">
-          <caret line="25" column="71" lean-forward="false" selection-start-line="25" selection-start-column="71" selection-end-line="25" selection-end-column="71" />
+        <state relative-caret-position="510">
+          <caret line="91" column="8" lean-forward="false" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
           <folding>
             <element signature="e#1326#1327#0" expanded="true" />
             <element signature="e#1379#1380#0" expanded="true" />

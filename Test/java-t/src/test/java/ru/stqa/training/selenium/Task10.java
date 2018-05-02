@@ -73,9 +73,9 @@ public class Task10 {
         String regularPriceValue = getPrice(regularPrice);
         String campaignPriceValue = getPrice(campaignPrice);
 
-        assertEquals(getCssValue(regularPrice,"color"), "rgba(119, 119, 119, 1)");
-        assertEquals(getFontWeight(regularPrice), 400);
+        assertEquals(getCssValue(regularPrice,"text-decoration"), "line-through solid rgb(119, 119, 119)");
         assertEquals(getCssValue(campaignPrice,"color"), "rgba(204, 0, 0, 1)");
+        assertEquals(getFontWeight(regularPrice), 400);
         assertEquals(getFontWeight(campaignPrice), 700);
         assertTrue( getFontWeight(campaignPrice) > getFontWeight(regularPrice));
         product.click();
@@ -86,9 +86,9 @@ public class Task10 {
         assertEquals(getName(driver.findElement(PRODUCT_TITLE)), name);
         assertEquals(getPrice(regularPrice), regularPriceValue);
         assertEquals(getPrice(campaignPrice), campaignPriceValue);
-        assertEquals(getCssValue(regularPrice,"color"), "rgba(102, 102, 102, 1)");
-        assertEquals(getFontWeight(regularPrice), 400);
+        assertEquals(getCssValue(regularPrice,"text-decoration"), "line-through solid rgb(102, 102, 102)");
         assertEquals(getCssValue(campaignPrice,"color"), "rgba(204, 0, 0, 1)");
+        assertEquals(getFontWeight(regularPrice), 400);
         assertEquals(getFontWeight(campaignPrice), 700);
         assertTrue( getFontWeight(campaignPrice) > getFontWeight(regularPrice));
     }
