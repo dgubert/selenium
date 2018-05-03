@@ -19,8 +19,8 @@ import static org.openqa.selenium.support.ui.ExpectedConditions.titleIs;
 
 public class Task8 {
 
-    private static final By PRODUCT = By.cssSelector(".listing-wrapper .link");
-    private static final By STICKER = By.cssSelector(".listing-wrapper .link .sticker");
+    private static final By PRODUCT = By.cssSelector(".content .link");
+    private static final By STICKER = By.cssSelector(".sticker");
 
     private WebDriver driver;
     private WebDriverWait wait;
@@ -40,7 +40,7 @@ public class Task8 {
         driver.get("http://localhost/litecart/en/");
         List<WebElement> products = driver.findElements(PRODUCT);
 
-        for (int i = 0; i < products.toArray().length; i++) {
+        for (int i = 0; i < products.size(); i++) {
             assertTrue(products.get(i).findElements(STICKER).size() == 1);
         }
 
