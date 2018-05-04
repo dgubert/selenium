@@ -13,7 +13,11 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.w3c.dom.ls.LSException;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static java.util.concurrent.TimeUnit.SECONDS;
 import static org.junit.Assert.*;
@@ -52,6 +56,41 @@ public class Task10 {
         return Integer.parseInt(getCssValue(el,"font-weight"));
     }
 
+    public List<String> getColor(WebElement el) {
+        List<String> colors = new ArrayList<String>();
+        String str = getCssValue(el,"color");
+        Pattern pat= Pattern.compile("\\d+");
+        Matcher m = pat.matcher(str);
+        while (m.find()) {
+            colors.add(m.group());
+        }
+
+        return colors;
+    }
+
+    public boolean isGrey(WebElement el) {
+        List<String> color = getColor(el);
+
+        return color.get(0).compareTo(color.get(1)) == 0 && color.get(0).compareTo(color.get(2)) == 0;
+    }
+
+    public boolean isRed(WebElement el) {
+        List<String> color = getColor(el);
+
+        return color.get(1).compareTo(color.get(2)) == 0 && color.get(1).compareTo("0") == 0;
+    }
+
+    public boolean isBold(WebElement el) {
+        return getFontWeight(el) == 700;
+    }
+
+    public boolean isNormal(WebElement el) {
+        return getFontWeight(el) == 400;
+    }
+
+    public boolean isLineThrough(WebElement el) {
+        return getCssValue(el,"text-decoration-line").compareTo("line-through") == 0;
+    }
     /*
     нужно открыть главную страницу, выбрать первый товар в блоке Campaigns и проверить следующее:
 
@@ -73,10 +112,11 @@ public class Task10 {
         String regularPriceValue = getPrice(regularPrice);
         String campaignPriceValue = getPrice(campaignPrice);
 
-        assertEquals(getCssValue(regularPrice,"text-decoration"), "line-through solid rgb(119, 119, 119)");
-        assertEquals(getCssValue(campaignPrice,"color"), "rgba(204, 0, 0, 1)");
-        assertEquals(getFontWeight(regularPrice), 400);
-        assertEquals(getFontWeight(campaignPrice), 700);
+        assertTrue(isLineThrough(regularPrice));
+        assertTrue(isGrey(regularPrice));
+        assertTrue(isRed(campaignPrice));
+        assertTrue(isNormal(regularPrice));
+        assertTrue(isBold(campaignPrice));
         assertTrue( getFontWeight(campaignPrice) > getFontWeight(regularPrice));
         product.click();
 
@@ -86,10 +126,11 @@ public class Task10 {
         assertEquals(getName(driver.findElement(PRODUCT_TITLE)), name);
         assertEquals(getPrice(regularPrice), regularPriceValue);
         assertEquals(getPrice(campaignPrice), campaignPriceValue);
-        assertEquals(getCssValue(regularPrice,"text-decoration"), "line-through solid rgb(102, 102, 102)");
-        assertEquals(getCssValue(campaignPrice,"color"), "rgba(204, 0, 0, 1)");
-        assertEquals(getFontWeight(regularPrice), 400);
-        assertEquals(getFontWeight(campaignPrice), 700);
+        assertTrue(isLineThrough(regularPrice));
+        assertTrue(isGrey(regularPrice));
+        assertTrue(isRed(campaignPrice));
+        assertTrue(isNormal(regularPrice));
+        assertTrue(isBold(campaignPrice));
         assertTrue( getFontWeight(campaignPrice) > getFontWeight(regularPrice));
     }
 
